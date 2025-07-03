@@ -26,4 +26,9 @@ def test_custom_delimiter_semicolon():
 def test_negative_number():
     with pytest.raises(Exception) as e:
         add("1,-2,3")
-    assert str(e.value) == "negative numbers not allowed -2"
+    assert str(e.value) == "negative numbers not allowed -2"    
+
+def test_multiple_negative_numbers():
+    with pytest.raises(Exception) as e:
+        add("-1,2,-3,-4")
+    assert str(e.value) == "negative numbers not allowed -1,-3,-4"
