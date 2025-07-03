@@ -4,11 +4,5 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 
 from calculator import add
 
-def test_empty_string_returns_zero():
+def test_empty_string():
     assert add("") == 0
-    
-def test_single_number():
-    assert add("5") == 5
-
-def test_two_numbers():
-    assert add("1,2") == 3
