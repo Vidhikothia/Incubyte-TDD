@@ -1,5 +1,6 @@
 import sys
 import os
+import pytest
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
 from calculator import add
@@ -21,3 +22,8 @@ def test_newline_between_numbers():
 
 def test_custom_delimiter_semicolon():
     assert add("//;\n1;2") == 3
+
+def test_negative_number():
+    with pytest.raises(Exception) as e:
+        add("1,-2,3")
+    assert str(e.value) == "negative numbers not allowed -2"
