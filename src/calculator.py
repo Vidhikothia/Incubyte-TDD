@@ -11,8 +11,8 @@ def add(numbers):
     numbers = numbers.replace("\n", delimiter)
     parts = numbers.split(delimiter)
     
-    negatives = [int(n) for n in parts if int(n) < 0]
+    negatives = [int(n) for n in parts if n and int(n) < 0]
     if negatives:
         raise Exception(f"negative numbers not allowed {','.join(map(str, negatives))}")
     
-    return sum(int(n) for n in parts)
+    return sum(int(n) for n in parts if n)

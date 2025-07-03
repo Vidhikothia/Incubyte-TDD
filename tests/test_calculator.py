@@ -32,3 +32,6 @@ def test_multiple_negative_numbers():
     with pytest.raises(Exception) as e:
         add("-1,2,-3,-4")
     assert str(e.value) == "negative numbers not allowed -1,-3,-4"
+
+def test_custom_delimiter_no_numbers():
+    assert add("//;\n") == 0
