@@ -38,3 +38,6 @@ def test_custom_delimiter_no_numbers():
 
 def test_ignore_large_numbers():
     assert add("2,1001") == 2
+
+def test_delimiter_any_length():
+    assert add("//[***]\n1***2***3") == 6
