@@ -35,3 +35,6 @@ def test_multiple_negative_numbers():
 
 def test_custom_delimiter_no_numbers():
     assert add("//;\n") == 0
+
+def test_ignore_large_numbers():
+    assert add("2,1001") == 2
