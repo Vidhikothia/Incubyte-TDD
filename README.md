@@ -7,16 +7,16 @@ The task was to build a **String Calculator** by following proper **TDD practice
 
 ## ✅ Features Implemented
 
-- [x] Returns `0` for empty string input
-- [x] Handles one or two comma-separated numbers
-- [x] Handles unknown number of inputs
-- [x] Accepts newline `\n` as delimiter along with commas
-- [x] Custom single-character delimiters using `//;\n1;2` format
-- [x] Throws exception for negative numbers (shows all negatives)
-- [x] Ignores numbers greater than `1000`
-- [x] Supports delimiters of any length — e.g. `//[***]\n1***2***3`
-- [x] Supports multiple delimiters — e.g. `//[*][%]\n1*2%3`
-- [x] Supports multiple delimiters of any length — e.g. `//[***][%%]\n1***2%%3`
+-  Returns `0` for empty string input
+-  Handles one or two comma-separated numbers
+-  Handles unknown number of inputs
+-  Accepts newline `\n` as delimiter along with commas
+-  Custom single-character delimiters using `//;\n1;2` format
+-  Throws exception for negative numbers (shows all negatives)
+-  Ignores numbers greater than `1000`
+-  Supports delimiters of any length — e.g. `//[***]\n1***2***3`
+-  Supports multiple delimiters — e.g. `//[*][%]\n1*2%3`
+-  Supports multiple delimiters of any length — e.g. `//[***][%%]\n1***2%%3`
 
 
 
